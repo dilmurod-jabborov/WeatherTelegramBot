@@ -12,7 +12,10 @@ namespace WeatherForecast
     {
         static async Task Main(string[] args)
         {
-            MainMenu mainMenu = new MainMenu("8395303487:AAGrBXtmyyrWxQk6LjIF3NxgxSe1v5A_eHo");
+            string token = Environment.GetEnvironmentVariable("BOT_TOKEN");
+
+            MainMenu mainMenu = new MainMenu(token);
+
             await mainMenu.StartAsync();
         }
     }
