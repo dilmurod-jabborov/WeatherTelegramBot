@@ -9,9 +9,7 @@ namespace WeatherForecast.Data.Constanta;
 
 public static class PathHolder
 {
-    private static readonly string baseRoot =
-        Path.Combine(AppContext.BaseDirectory, "..", "..", "..");
-
     public static readonly string UsersFilePath =
-        Path.Combine(baseRoot, "Data", "Database", "users.json");
+        Path.Combine(AppContext.BaseDirectory, "Data", "Database", "users.json");
 }
+

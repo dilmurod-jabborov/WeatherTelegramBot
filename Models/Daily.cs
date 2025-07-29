@@ -1,4 +1,6 @@
-﻿namespace WeatherForecast.Models;
+﻿using System.Collections.Generic;
+
+namespace WeatherForecast.Models;
 
 public class Daily
 {

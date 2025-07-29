@@ -5,6 +5,7 @@ using WeatherForecast.Data;
 using WeatherForecast.Models;
 using System.Reflection;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace WeatherForecast
 {
@@ -12,7 +13,7 @@ namespace WeatherForecast
     {
         static async Task Main(string[] args)
         {
-            string token = Environment.GetEnvironmentVariable("BOT_TOKEN");
+            string token = "8395303487:AAGrBXtmyyrWxQk6LjIF3NxgxSe1v5A_eHo";             //Environment.GetEnvironmentVariable("BOT_TOKEN");
 
             MainMenu mainMenu = new MainMenu(token);
 
